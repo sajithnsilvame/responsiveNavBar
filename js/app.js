@@ -1,6 +1,20 @@
-if(document, 'jquery' == 'undefined'){
-    console.log("not working");
-}
-else{
-    console.log("Finally got it..!!");
-}
+$(document).ready(function(){
+    $(window).on('scroll',function(){
+        var scroll = $(window).scrollTop();
+        if(scroll>= 50){
+            $(".sticky").addClass("stickyAdd");
+        }
+        else{
+            $(".sticky").removeClass("stickyAdd");
+        }
+    })
+          
+})
+
+
+
+
+
+
+
+

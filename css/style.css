@@ -21,6 +21,8 @@ body{
 
 /* Navigation */
 
+
+
 nav .r-nav{
    background: transparent;
    padding: 20px 0;
@@ -40,6 +42,57 @@ nav .navbar-nav li a{
     font-family: 'Nunito', sans-serif;
 }
 
+@media(max-width: 991px){
+    nav .navbar-nav li a{
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    nav.stickyAdd .fa-bars{
+        color: #000;
+    }
+    .nav-link:hover{
+        background-color: rgb(29, 108, 212);
+        padding: 3px;
+        border-radius: 5px;
+        
+    }
+
+}
+
 nav .navbar-nav li{
     margin-left: 15px;
+}
+
+span i.fa-bars{
+     color: #fff;
+}
+
+.nav-link:hover{
+    background-color: rgb(29, 108, 212);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+/* .active{
+    background-color: rgb(29, 108, 212);
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+nav.r-nav.stickyAdd{
+     background: #fff !important;
+     padding: 15px 0;
+     box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+     transition: .5s all ease-in-out;
+}
+
+nav.stickyAdd .navbar-brand{
+    color: #000;
+    font-size: 40px;
+    transition: .5s all;
+}
+
+nav.stickyAdd .navbar-nav .nav-link{
+    color: #000 !important;
 }
